@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Sport Stat Tracker Documentation',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -24,7 +24,8 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'cipher-pol-aigis-zero', // Usually your GitHub org/user name.
   projectName: 'sport-stat-tracker-documentation', // Usually your repo name.
-
+  deploymentBranch: 'gh-pages', // default branch Docusaurus deploys to
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
