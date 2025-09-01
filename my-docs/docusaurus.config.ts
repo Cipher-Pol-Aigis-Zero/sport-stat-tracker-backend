@@ -6,32 +6,25 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Sport Stat Tracker Documentation',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Documentation for Sport Stat Tracker',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
+  // Production URL
   url: 'https://cipher-pol-aigis-zero.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/sport-stat-tracker-documentation/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cipher-pol-aigis-zero', // Usually your GitHub org/user name.
-  projectName: 'sport-stat-tracker-documentation', // Usually your repo name.
-  deploymentBranch: 'gh-pages', // default branch Docusaurus deploys to
+  // GitHub pages deployment config
+  organizationName: 'cipher-pol-aigis-zero',
+  projectName: 'sport-stat-tracker-documentation',
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -43,10 +36,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cipher-pol-aigis-zero/sport-stat-tracker-documentation/edit/main/my-docs/',
         },
         blog: {
           showReadingTime: true,
@@ -54,11 +45,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/cipher-pol-aigis-zero/sport-stat-tracker-documentation/edit/main/my-docs/blog/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -71,12 +59,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Sport Stat Tracker',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Sport Stat Tracker Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -84,11 +71,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/cipher-pol-aigis-zero/sport-stat-tracker-documentation',
           label: 'GitHub',
           position: 'right',
         },
@@ -132,12 +119,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/cipher-pol-aigis-zero/sport-stat-tracker-documentation',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cipher Pol “Aigis” Zero. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
