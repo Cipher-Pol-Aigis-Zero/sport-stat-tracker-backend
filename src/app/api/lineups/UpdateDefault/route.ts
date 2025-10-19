@@ -1,4 +1,5 @@
-// app/api/lineups/update/route.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// app/api/lineups/UpdateDefault/route.ts
 import { NextResponse } from "next/server";
 import { supabase } from "@/app/api/DatabaseApi/supabaseClient";
 

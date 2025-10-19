@@ -1,4 +1,4 @@
-// app/api/DatabaseApi/createTeam/route.ts
+// app/api/coach/create-team/route.ts
 import { type NextRequest, NextResponse } from "next/server"
 import { supabase } from "@/app/api/DatabaseApi/supabaseClient"
 import { v4 as uuidv4 } from "uuid"

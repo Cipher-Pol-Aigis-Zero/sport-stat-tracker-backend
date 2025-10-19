@@ -1,4 +1,5 @@
-// app/api/players/unassigned/route.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// app/api/coach/free/route.ts
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { supabase } from "../../DatabaseApi/supabaseClient";

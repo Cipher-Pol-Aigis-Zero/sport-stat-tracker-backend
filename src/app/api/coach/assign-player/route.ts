@@ -1,7 +1,7 @@
+//app/api/coach/assign-player/route.ts
 import { supabase } from "@/app/api/DatabaseApi/supabaseClient";
 
 import { NextRequest, NextResponse } from "next/server";
-
 
 export interface AssignPlayerData {
   playerId: string;

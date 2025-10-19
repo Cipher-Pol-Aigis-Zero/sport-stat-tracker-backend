@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+//app/api/(external api)/trails/route.ts
 import { NextResponse } from "next/server";
 
 const BASE_URL = "https://orion-api-qeyv.onrender.com/api/trails";

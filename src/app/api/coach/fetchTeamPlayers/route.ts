@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+//app/api/coach/fetchTeamPlayers/route.ts
 import { NextResponse } from "next/server";
 import { supabase } from "@/app/api/DatabaseApi/supabaseClient";
 

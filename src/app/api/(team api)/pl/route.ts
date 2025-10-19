@@ -1,4 +1,4 @@
-// app/api/pl/route.ts
+// app/api/(external api)/pl/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '../../DatabaseApi/supabaseClient';
 

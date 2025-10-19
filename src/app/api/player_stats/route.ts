@@ -1,3 +1,4 @@
+//app/api/player_stats
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "../DatabaseApi/supabaseClient";
 

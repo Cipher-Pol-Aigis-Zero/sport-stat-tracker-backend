@@ -1,7 +1,7 @@
 
 
 //This is where we fetch all details pertaining a specific game using the match id
-
+//app/api/analyst/[matchid]/route.ts
 import { NextResponse } from "next/server";
 import { supabase } from '@/app/api/DatabaseApi/supabaseClient';
 //Given the MatchID we should be able to fetch all lineups and playerid

@@ -1,4 +1,5 @@
-// app/api/matches/assign-analyst/route.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// app/api/GameBooking/route.ts
 import { NextResponse } from 'next/server';
 import { supabase } from '@/app/api/DatabaseApi/supabaseClient';
 

@@ -1,3 +1,4 @@
+//app/api/Booked_Games/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '../DatabaseApi/supabaseClient';
 
