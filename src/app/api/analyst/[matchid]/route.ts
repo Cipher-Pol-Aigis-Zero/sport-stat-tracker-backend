@@ -1,5 +1,5 @@
 
-
+/* eslint-disable @typescript-eslint/no-unused-vars */
 //This is where we fetch all details pertaining a specific game using the match id
 //app/api/analyst/[matchid]/route.ts
 import { NextResponse } from "next/server";

@@ -1,4 +1,5 @@
 // app/api/teams/route.ts
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextResponse } from 'next/server';
 import { supabase } from '@/app/api/DatabaseApi/supabaseClient';
 
