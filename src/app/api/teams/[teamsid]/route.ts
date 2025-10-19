@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // /app/api/teams/[teamsid]/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "../../DatabaseApi/supabaseClient";
