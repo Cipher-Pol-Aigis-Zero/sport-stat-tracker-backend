@@ -29,48 +29,40 @@ export default function ApiDocsPage() {
           description: "Get all players in the database.",
           params: `No query params`,
           exampleRequest: "/api/players?...",
-          exampleResponse: {
-            id: "p1",
-            first_name: "John",
-            last_name: "Doe",
-            position: "Forward",
-            jersey_number: 10,
-            team_id: 1,
-            avatar_url: "/avatars/player3.jpg",
-          },
+          exampleResponse: [{
+            
+    "id": "7bc9f2f8-5032-4286-ae31-dcb3db67e672",
+    "first_name": "Andrew",
+    "last_name": "Reed",
+    "position": "PF",
+    "avatar_url": "https://mcoxscmcokkpbmonrxku.supabase.co/storage/v1/object/public/teamLogos/Harrison-Barnes.jpg",
+    "jersey_number": 1,
+    "team_id": null
+  
+          },]
         },
       ],
     },
     {
       title: "Teams API",
-      description: "Endpoints for fetching and managing teams.",
+      description: "Endpoints for fetching teams.",
       routes: [
         {
           method: "GET",
           endpoint: "/api/teams",
-          description: "Get all teams (optionally filtered by comma-separated IDs).",
-          params: "?ids=<id1,id2,id3>",
-          exampleRequest: "/api/teams?ids=1,2",
+          description: "Get all teams .",
+          params: "No Params",
+          exampleRequest: "/api/teams?...",
           exampleResponse: [
             {
-              team_id: 1,
-              name: "Wits FC",
-              location: "Johannesburg",
-            },
+    "team_id": "73b4b864-1a12-4dca-a0c3-015714264ebe",
+    "team_name": "Lakers",
+    "coach_id": "8caf41cf-edf5-4cb0-93dd-23b94bb24efa",
+    "created_at": "2025-08-30T17:06:59.500771",
+    "icon_url": "https://mcoxscmcokkpbmonrxku.supabase.co/storage/v1/object/public/teamLogos/f30a3bb5-9352-426e-836f-faeb4d722292.png",
+    "lineup": true
+  },
           ],
-        },
-        {
-          method: "POST",
-          endpoint: "/api/teams",
-          description: "Create a new team.",
-          exampleRequest: `{
-  "name": "Wits FC",
-  "location": "Johannesburg"
-}`,
-          exampleResponse: {
-            message: "Team created successfully",
-            team_id: 1,
-          },
         },
       ],
     },
@@ -86,12 +78,19 @@ export default function ApiDocsPage() {
           exampleRequest: "/api/matches?teamId=1",
           exampleResponse: [
             {
-              match_id: 5,
-              home_team: "Wits FC",
-              away_team: "UCT FC",
-              date: "2025-10-19",
-              score: "3-1",
-            },
+    "match_id": "8a3bd8ab-5976-47f2-8710-621753cfd08a",
+    "home_team_id": "f32290d1-0069-4452-97fa-4811a868e0d7",
+    "away_team_id": "97325c02-cbb3-48a8-a4b6-04736fdb9eb5",
+    "match_date": "2025-08-28T22:46:42.898703",
+    "location": "Stadium 10",
+    "season": "2025 Season",
+    "created_at": "2025-09-25T22:46:42.898703",
+    "completed": true,
+    "home_score": 117,
+    "away_score": 93,
+    "analyst": "5c6c38f1-94bc-4c56-823f-6ccb116f2aa8",
+    "booked": true
+  },
           ],
         },
       ],
