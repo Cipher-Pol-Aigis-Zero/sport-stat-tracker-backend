@@ -1,3 +1,4 @@
+//app/api/sports/leagues/route.ts
 import { NextResponse } from "next/server";
 
 const API_KEY = process.env.NEXT_PUBLIC_ALL_SPORTS_API_KEY;
